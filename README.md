@@ -2,10 +2,10 @@
 This repository contains two JavaScript scripts for uploading files to Google Cloud Storage.
 
 ## Script 1: generate-urls.js
-This script generates a signed URL for uploading a file to Google Cloud Storage using the @google-cloud/storage library. The signed URL is valid for 30 minutes and can be used to upload a text/plain file.
+This script generates a signed URL for uploading a file to Google Cloud Storage using the @google-cloud/storage library. The signed URL is valid for 30 minutes and can be used to upload a image/png file.
 
 ## Script 2: upload.js
-This script uses the fetch and fs libraries to upload a file to a given signed URL. The file is read into memory and uploaded using an HTTP PUT request. The content type header is set to "text/plain".
+This script uses the fetch and fs libraries to upload a file to a given signed URL. The file is read into memory and uploaded using an HTTP PUT request. The content type header is set to "image/png".
 
 ## Requirements
 
