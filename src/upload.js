@@ -12,7 +12,7 @@ async function uploadFile(signedUrl, localFile) {
       body: fileContent,
       method: "PUT",
       headers: {
-        "Content-Type": "text/plain",
+        "Content-Type": "image/png",
       }
     });
     if (!response.ok) {
@@ -26,7 +26,7 @@ async function uploadFile(signedUrl, localFile) {
 
 async function main() {
   // Upload the file to the signed URL
-  await uploadFile(process.env.SIGNED_URL, "assets/test_file.txt");
+  await uploadFile(process.env.SIGNED_URL, "assets/commit-logo.png");
 }
 
 main().catch(console.error);

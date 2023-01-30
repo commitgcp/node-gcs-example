@@ -17,7 +17,7 @@ async function generateUploadSignedUrl(bucketName, destFileName) {
     version: "v4",
     action: "write",
     expires: Date.now() + 30 * 60 * 1000, // 30 mins
-    contentType: "text/plain",
+    contentType: "image/png",
   };
 
   //auth required to get signed URL
@@ -29,7 +29,7 @@ async function main() {
   // Generate a signed URL for uploading a file
   const signedUrl = await generateUploadSignedUrl(
     bucketName = process.env.BUCKET_NAME,
-    destFileName = "demo_file.txt"
+    destFileName = "commit.png"
   );
   console.log(signedUrl);
 }

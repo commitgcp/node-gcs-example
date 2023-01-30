@@ -26,3 +26,7 @@ This script uses the fetch and fs libraries to upload a file to a given signed U
 ## Note
 - Please make sure to replace the placeholder values in the scripts with the actual values relevant to your setup.
 - These scripts are for demonstration purposes only. They are not intended for production use.
+
+---
+
+<div style="text-align:center"><img src="assets/commit-logo.png" /></div>
